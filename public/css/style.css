@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.container-fluid {
+  margin: 20px auto;
+  max-width: 90%;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.elevar__hints {
+  color: rgba(63, 59, 59, 0.863);
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.elevar__size__link {
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(6, 69, 173);
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.elevar__image {
+  padding: 2%;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.elevar__image-img {
+  margin: auto;
+  width: 60%;
+  cursor: pointer;
+  transition: transform 1s;
+  /* animation: fade 1.5s; */
+
+}
+
+.elevar__image-img:hover {
+  transform: scale(1.3);
+}
+
+.elevar__image-thumbnail {
+  width: 20%;
+  /* height: 30%; */
+  object-fit: contain;
+  opacity: 0.5;
+  margin: 3px;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.elevar__slider {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.elevar__image__slider {
+  display: flex;
+  flex-direction: row;
+  /* width: 70%; */
+  margin: 2px 0;
+  height: 80%;
+  overflow-x: hidden;
+}
+
+.prev-next {
+  width: 10%;
+  object-fit: contain;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+/* 
+.elevar__image__slider__complete{
+  display: flex;
+  flex-direction: row;
+  
+} */
+
+.selected {
+  opacity: 1;
+}
+
+.elevar__title > small {
+  font-weight: 200;
+}
+
+.elevar__title > h2 {
+  color: #333;
+  font-weight: 900;
+}
+
+.elevar__title__highlight {
+  font-weight: 600;
+  color: rgb(78, 76, 76);
+}
+
+.elevar__cost {
+  padding: 0 !important;
+}
+
+.elevar__cost > p {
+  margin-bottom: 0;
+}
+
+.elevar__real-cost {
+  font-weight: 200;
+  color: rgba(63, 59, 59, 0.863);
+}
+
+.elevar__discount-cost {
+  font-weight: 800;
+  color: blue;
+  cursor: pointer;
+}
+
+.elevar__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.elevar__choose-color {
+  display: flex;
+  flex-direction: row;
+}
+
+.elevar__choose-color__image {
+  width: 10%;
+  object-fit: contain;
+  border: 2px solid grey;
+  border-radius: 60px;
+  margin-right: 2%;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.elevar__choose-color__image:hover {
+  border: 2px solid grey;
+  transform: scale(1.2);
+}
+
+.elevar__content__size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.elevar__content__size > p {
+  margin-bottom: 0;
+}
+
+.elevar__choose-color__title {
+  font-weight: 700;
+  margin-left: 2%;
+  color: #800000;
+}
+
+.elevar__shoe__sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.elevar__shoe__description {
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  width: 18%;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+}
+
+.elevar__shoe__description:hover {
+  border: 1px solid black;
+}
+
+.elevar__add-to-cart {
+  width: 100%;
+  background-color: rgb(15, 15, 197);
+  color: white;
+  font-weight: 500;
+  margin: 18px 0;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  transition: transform;
+}
+
+.elevar__add-to-cart:hover{
+  background-color: rgb(4, 4, 168);
+  transform: scale(1.008);
+}
+
+.elevar__add-to-cart:visited{
+  border: 1px solid rgb(4, 4, 168) !important;
+}
+
+.elevar__size__title__comaprison {
+  font-weight: 700;
+  color: darkslategray;
+  font-size: small;
+}
+
+.display__laptop {
+  display: block;
+}
+
+.display__mobile {
+  display: none !important;
+}
+
+
+.elevar__choose-color__without__slider{
+  margin: 10px auto;
+}
+
+.elevar__choose-color__title__without__slider{
+  width: 100%;
+}
+
+
+
+/* Modal */
+
+.table{
+  text-align: center !important;
+  margin: 20px auto !important;
+  width: max-content !important;
+}
+
+
+/* .elevar__size__modal {
+  max-width: 700px !important;
+  width: 100% !important;
+  height: 100vh;
+  overflow-x: auto;
+  margin: auto auto;
+} */
+
+/* .modal-dialog {
+  max-width: 80%;
+} */
+
+.elevar__modal__title {
+  width: auto;
+  margin: 10px auto !important;
+  font-weight: 700;
+  color: black;
+}
+
+.elevar__modal__size__title {
+  width: auto;
+  margin: 10px auto !important;
+}
+
+.modal-body {
+  margin: 0 10%;
+  /* text-align: center; */
+}
+
+.modal-body h4{
+  color:black
+}
+
+.close {
+  margin-left: 0 !important;
+}
+
+.modal__unsure-about-size{
+  list-style-type: none;
+}
+
+th{
+  background-color: black !important;
+}
+
+.custom-control-label {
+  font-weight: bold;
+}
+
+.elevar__size__dropdown {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.elevar__size__dropdown__title {
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.elevar__size__dropdown__menu {
+  width: 100%;
+}
+
+.elevar__size__dropdown__menu > li {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+  cursor: pointer;
+}
+
+.elevar__size__dropdown__menu > li:hover {
+  background-color: black;
+  color: white;
+}
+
+.elevar__recommendation {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.image__counter{
+  width: max-content;
+  height: max-content;
+  padding: 2%;
+  background-color: blue;
+  border-radius: 8%;
+  color: white;
+}
+
+.modal__images{
+  width: 50%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.modal__mensizes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal__mensizes button{
+  border: none;
+}
+
+#inCm{
+  display: block;
+}
+
+#inInch{
+  display: none;
+}
+
+#in-cm{
+  background-color: blue;
+  color: white;
+}
+
+#in-in{
+  background-color: white;
+  color: black;
+}
+
+/* Modal End Here */
+
+.elevar__image__content{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 992px) {
+  * {
+    margin: 0;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .display__laptop {
+    display: none !important;
+  }
+
+  .display__mobile {
+    display: block !important;
+    padding: 5%;
+  }
+
+  .elevar__image-img {
+    width: 80%;
+  }
+
+  .dropdown__text{
+    font-size: 22px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  * {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .modal-dialog {
+    max-width: 600px; /* New width for default modal */
+  }
+
+  .dropdown__text{
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,674 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/show images/Elevar_logo.png" />
+    <title>Elevar ARC Racer</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/script/script.js" defer></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar Start Here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ELEVAR</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >About Us <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shoes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bats</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- Navbar End Here -->
+
+    <div class="container elevar">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 elevar__image">
+          <div class="display__mobile elevar__title">
+            <span class="elevar__hints">Our Flagship Sneaker</span>
+            <h2>ELEVAR ARC RACER</h2>
+            <div class="col-sm-12 elevar__cost">
+              <span class="elevar__hints"
+                >Limited Time Early Bird Discount: Get Rs. 1000 Off
+              </span>
+              <p>
+                <span class="elevar__real-cost"> <del>INR 5,999</del> </span>
+                <span class="elevar__discount-cost" data-toggle="tooltip" data-html="true" title="$67.28">INR 4,999</span>
+              </p>
+              <small data-toggle="tooltip" data-html="true" title="4.8 star rating (52 Votes)">
+                <span class="elevar__discount-cost" 
+                  >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                >(52)</small
+              >
+            </div>
+          </div>
+
+          <div class="elevar__image__content">
+            <img
+              src="/images/show images/prev.png"
+              alt="no internet"
+              class="prev-next"
+              onclick="onImageIterator('prev')"
+            />
+            <img
+              class="elevar__image-img img-fluid"
+              src="/images/show images/0.png"
+              alt="no internet"
+            />
+
+            <img
+              src="/images/show images/next.png"
+              alt="no internet"
+              class="prev-next"
+              onclick="onImageIterator('next')"
+            />
+          </div>
+
+          <div class="row">
+            <p class="elevar__choose-color__title__without__slider">
+              <span class="elevar__title__highlight">Choose Color:</span
+              ><span class="elevar__choose-color__title"
+                >Cobalt Firey Carbon</span
+              >
+            </p>
+          </div>
+
+          <!-- Choose Color Start -->
+          <div class="row">
+            <div class="elevar__choose-color__without__slider">
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/red.png"
+                alt="no internet"
+                onclick="onThumbnailClickWithoutSlider(0)"
+              />
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/blue.png"
+                alt="no internet"
+                onclick="onThumbnailClickWithoutSlider(1)"
+              />
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/black.png"
+                alt="no internet"
+                onclick="onThumbnailClickWithoutSlider(2)"
+              />
+            </div>
+          </div>
+
+          <!-- Choose Color End -->
+
+          <!-- <div class="elevar__slider"  >
+            <img
+              src="/images/show images/prev.png"
+              alt="no internet"
+              class="prev-next"
+              onclick="onThumbnailIterator('prev')"
+            />
+            <div class="elevar__image__slider"  >
+              <img
+                src="/images/show images/0.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid selected"
+                onclick="onThumbnailClick(0)"
+              />
+              <img
+                src="/images/show images/1.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(1)"
+              />
+              <img
+                src="/images/show images/2.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(2)"
+              />
+              <img
+                src="/images/show images/3.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(3)"
+              />
+              <img
+                src="/images/show images/4.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(4)"
+              />
+              <img
+                src="/images/show images/5.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(5)"
+              />
+              <img
+                src="/images/show images/6.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(6)"
+              />
+              <img
+                src="/images/show images/7.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(7)"
+              />
+              <img
+                src="/images/show images/8.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(8)"
+              />
+              <img
+                src="/images/show images/9.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(9)"
+              />
+              <img
+                src="/images/show images/10.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(10)"
+              />
+              <img
+                src="/images/show images/11.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(11)"
+              />
+              <img
+                src="/images/show images/12.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(12)"
+              />
+              <img
+                src="/images/show images/13.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(13)"
+              />
+              <img
+                src="/images/show images/14.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(14)"
+              />
+              <img
+                src="/images/show images/15.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(15)"
+              />
+              <img
+                src="/images/show images/16.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(16)"
+              />
+              <img
+                src="/images/show images/17.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(17)"
+              />
+              <img
+                src="/images/show images/18.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(18)"
+              />
+
+              <img
+                src="/images/show images/19.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(19)"
+              />
+              <img
+                src="/images/show images/20.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(21)"
+              />
+              <img
+                src="/images/show images/22.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(22)"
+              />
+              <img
+                src="/images/show images/23.png"
+                alt="no internet"
+                class="elevar__image-thumbnail img-fluid"
+                onclick="onThumbnailClick(23)"
+              />
+            </div>
+            <img
+              src="/images/show images/next.png"
+              alt="no internet"
+              class="prev-next"
+              onclick="onThumbnailIterator('next')"
+            />
+          </div> -->
+        </div>
+        <div class="col-lg-6 elevar__title">
+          <div class="display__laptop elevar__title">
+            <span class="elevar__hints">Our Flagship Sneaker</span>
+            <h2>ELEVAR ARC RACER</h2>
+            <div class="col-sm-12 elevar__cost">
+              <span class="elevar__hints"
+                >Limited Time Early Bird Discount: Get Rs. 1000 Off
+              </span>
+              <p>
+                <span class="elevar__real-cost"> <del>INR 5,999</del> </span>
+                <span class="elevar__discount-cost" data-toggle="tooltip" data-html="true" title="$67.28">INR 4,999</span>
+              </p>
+              <small  data-toggle="tooltip" data-html="true" title="4.8 star rating (52 Votes)">
+                <span class="elevar__discount-cost"
+                  >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                >(52)</small
+              >
+            </div>
+          </div>
+          <div class="elevar__content">
+            <p>
+              A high-performance shoe engineered specifically to adapt to your
+              needs
+            </p>
+
+            <!-- Choose Color Start -->
+
+            <!-- <p>
+              <span class="elevar__title__highlight">Choose Color:</span
+              ><span class="elevar__choose-color__title"
+                >Cobalt Firey Carbon</span
+              >
+            </p>
+            <div class="elevar__choose-color">
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/red.png"
+                alt="no internet"
+                onclick="onThumbnailClick(0)"
+              />
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/blue.png"
+                alt="no internet"
+                onclick="onThumbnailClick(8)"
+              />
+              <img
+                class="elevar__choose-color__image"
+                src="/images/choose_color/black.png"
+                alt="no internet"
+                onclick="onThumbnailClick(16)"
+              />
+            </div> -->
+
+            <!-- Choose Color End -->
+
+            <div class="elevar__content__size">
+              <p class="elevar__title__highlight">Choose Size (UK) :</p>
+              <u
+                class="elevar__size__link"
+                data-toggle="modal"
+                data-target="#elevar__modal"
+                >Size Guide</u
+              >
+            </div>
+            <p>
+              <small class="elevar__size__title"
+                >This UK Size 6 is equivalent to US 7 or EU 41</small
+              >
+            </p>
+            <div class="elevar__shoe__sizes">
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(6)"
+              >
+                6
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(7)"
+              >
+                7
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(8)"
+              >
+                8
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(9)"
+              >
+                9
+              </div>
+              <div
+                class="elevar__shoe__description"
+                onclick="onSizeIterator(10)"
+              >
+                10
+              </div>
+            </div>
+
+            <button class="elevar__add-to-cart">ADD TO CART</button>
+            <span
+              ><u class="elevar__hints"
+                >Check If We Deliver To Your Pincode</u
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="elevar__modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="elevar__modal__title">FIND YOUR SIZE</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row modal__mensizes">
+              <h4>Men's Sizes</h4>
+             <div><button id ="in-cm" onclick = 'onModalMetricDisplay("in-cm")'>cm</button><button id ="in-in" onclick = 'onModalMetricDisplay("in-in")'>in</button></div> 
+            </div>
+
+            <div class="row">
+              <table class="table" id="inCm">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>UK Size</th>
+                    <th>US Size</th>
+                    <th>Foot Length</th>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>25 cm</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>26 cm</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>27 cm</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>28 cm</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>29 cm</td>
+                  </tr>
+                </thead>
+              </table>
+              <table class="table" id="inInch">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>UK Size</th>
+                    <th>US Size</th>
+                    <th>Foot Length</th>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>9.80 in</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>10.20 in</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10.60 in</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11.00 in</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>11.40 in</td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+            <div class="row mt-4" class="modal__unsure-about-size">
+              <h4>Still Unsure About Your Size?</h4>
+              <ul class="modal__unsure-about-size">
+                <li><a href="#survey">Take a quick survey</a></li>
+                <li>or <a href="#measure">measure your feet</a></li>
+              </div>
+              </ul>
+
+            <div class="row mt-4" id="survey">
+              <h4 class="elevar__modal__size__title">Take A Quick Survey</h4>
+            </div>
+            <div class="row mt-4">
+              <p>Have You Ever Worn A Pair From Any Of These Brands?</p>
+            </div>
+            <div class="row">
+              <div
+                class="custom-control custom-radio custom-control-inline col"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline1"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                  onchange="onDropdownOptions(0)"
+                />
+                <label class="custom-control-label" for="customRadioInline1"
+                  >Nike</label
+                >
+              </div>
+              <div
+                class="custom-control custom-radio custom-control-inline col"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline2"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                  onchange="onDropdownOptions(0)"
+
+                />
+                <label class="custom-control-label" for="customRadioInline2"
+                  >Puma</label
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="custom-control custom-radio custom-control-inline col"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline3"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                  onchange="onDropdownOptions(0)"
+
+                />
+                <label class="custom-control-label" for="customRadioInline3"
+                  >Adidas</label
+                >
+              </div>
+              <div
+                class="custom-control custom-radio custom-control-inline col"
+              >
+                <input
+                  type="radio"
+                  id="customRadioInline4"
+                  name="customRadioInline1"
+                  class="custom-control-input"
+                  onchange="onDropdownOptions(0)"
+
+                />
+                <label class="custom-control-label" for="customRadioInline4"
+                  >Reebok</label
+                >
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="dropdown elevar__size__dropdown">
+                <button
+                  class="dropdown-toggle elevar__size__dropdown__title"
+                  type="button"
+                  data-toggle="dropdown"
+                >
+                  <p class="dropdown__text">What Size Do You Where?</p>
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu elevar__size__dropdown__menu">
+                  <li onclick="onDropdownOptions(6)">UK 6/US 7</li>
+                  <li onclick="onDropdownOptions(7)">UK 7/US 8</li>
+                  <li onclick="onDropdownOptions(8)">UK 8/US 9</li>
+                  <li onclick="onDropdownOptions(9)">UK 9/US 10</li>
+                  <li onclick="onDropdownOptions(10)">UK 10/US 11</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="elevar__recommendation"></div>
+            </div>
+
+            <div class="row mt-5">
+              <h4>In Between Sizes?</h4>
+              <p>
+                Sorry, we don't manufacture half sizes as of now. However, our
+                shoe upper is made from an elastic knit fabric that conforms to
+                the shape of your feet over time so you can choose the closest
+                size to your foot length as recommended by the table above and
+                try it out.
+              </p>
+              <p>For a tighter fit, move down a size.</p>
+              <p>For a looser fit, move up a size.</p>
+            </div>
+              <div class="row mt-5">
+                <h4>Not The Right Size?</h4>
+                <p>No problem, free returns within 7 days or purchase.</p>
+              </div>
+
+              <div class="row mt-5" id="measure">
+                <h4>How To Measure?</h4>
+                <p>Wear the type of socks you'll wear with your shoes and measure feet in the evening (feet typically swell during the day)</p>
+                <p class="image__counter">1</p><img src="/images/modal images/image1.jpg" alt="no internet" class="modal__images" />
+              </div>
+
+              <div class="row">
+                <p>Take a piece of paper and place it on a firm floor, near a wall. Place your foot on the paper with your heel slightly touching the wall.</p>
+                <p class="image__counter">2</p><img src="/images/modal images/image2.jpg" alt="no internet" class="modal__images" />
+              </div>
+
+              <div class="row">
+                <p>Mark with a pencil on, on the paper, the end of your longest toe for both feet.</p>
+                <p class="image__counter">3</p><img src="/images/modal images/image3.jpg" alt="no internet" class="modal__images" />
+              </div>
+
+              <div class="row">
+                <p>Measure the length from the wall to the marking and take the longer of the measurements you took for each feet.</p>
+                <p>Compare with our size guide to fit the best size.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
